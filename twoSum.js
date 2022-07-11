@@ -22,22 +22,24 @@
 
 // ===============================================================================================================
 
-var nums = [2,7,11,17];
+var nums = [2, 7, 11, 17];
 var target = 9;
 
-var nums1 = [3,2,4];
+var nums1 = [3, 2, 4];
 var target1 = 6;
 
-var nums2 = [3,3];
+var nums2 = [3, 3];
 var target2 = 6;
 
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
     let map = {};
 
-    for (var i = 0; i < nums.length; i++){
-        if(target - nums[i] in map){
+    for (var i = 0; i < nums.length; i++) {
+        if (target - nums[i] in map) {
             return [map[target - nums[i]], i];
-        } else map[nums[i]] = i;
+        } else {
+            map[nums[i]] = i;
+        }
     }
 
 };
@@ -45,8 +47,8 @@ var twoSum = function(nums, target) {
 console.log(twoSum(nums, target));
 // output: [0,1]
 
-console.log(twoSum(nums1, target1));
-// // output: [1,2]
+// console.log(twoSum(nums1, target1));
+// // // output: [1,2]
 
-console.log(twoSum(nums2, target2));
-// // output: [0,1]
+// console.log(twoSum(nums2, target2));
+// // // output: [0,1]
