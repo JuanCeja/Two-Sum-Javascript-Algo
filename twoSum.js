@@ -47,8 +47,8 @@ var twoSum = function (nums, target) {
 console.log(twoSum(nums, target));
 // output: [0,1]
 
-// console.log(twoSum(nums1, target1));
+console.log(twoSum(nums1, target1));
 // // // output: [1,2]
 
-// console.log(twoSum(nums2, target2));
+console.log(twoSum(nums2, target2));
 // // // output: [0,1]
